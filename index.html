@@ -1,46 +1,367 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Square Peg, Round Hole. A guide to importing content into WordPress</title>
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic|Droid+Serif:400italic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/pres.css">
+	<title>Square Peg, Round Hole... A guide to importing content into WordPress</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/prism.css"/>
 </head>
 <body>
-<article>
-	<section>
-		<div class="content">
-			<strong>Square Peg, Round Hole...</strong>
-			<div class="byline bigger-lead-in"><h3>Some sort of guide to importing content into WordPress</h3></div>
-			<div class="byline">
-				<img src="images/WordPress.png" alt="" class="intro-rounded">
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="content">
-			<strong>The inevitable self promotion...</strong>
-			<div class="byline">
-				<img src="images/WordPress.png" alt="" class="intro-rounded">
-			</div>
-			<ul class="smaller">
-				<li>Web developer at Flint Interactive</li>
-				<li>Work primarily with WordPress</li>
-				<li>Been working with WordPress since v1.2</li>
-				<li class="bullet">So around 9 years...</li>
-			</ul>
-			<div class="byline">
-				<img src="images/flint.png" alt="" class="intro-rounded">
-			</div>
-		</div>
-	</section>
+<article id="presentation">
+<section class="intro image-slide" style="padding: 20px 40px; background-image: url(images/intro.png)">
+	<h1 id="squarepegroundhole">Square Peg, Round Hole</h1>
+	<h2 id="aroundaboutguidetoimportingcontent">A roundabout guide to <br/>importing content into WordPress</h2>
+	<div class="centered">
+		<img src="images/wordpress.png" alt="" width="250" height="250"/>
+	</div>
+</section>
+<section>
+<h1 id="whoami">Who am I?</h1>
+<ul>
+<li><p>Web developer</p></li>
+<li><p>Work at Flint Interactive in Collingwood<br/><a href="http://www.flintinteractive.com.au">http://www.flintinteractive.com.au</a></p></li>
+<li><p>Working on and off with WordPress since v1.2</p></li>
+<li><p>So 9 years.</p></li>
+<li><p><br/>Find me on Twitter: <a href="http://twitter.com/navitronic">@navitronic</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="introduction">Introduction</h1>
+<ul>
+<li>We all know what WordPress is?</li>
+<li>In most minds, a blogging engine.</li>
+<li>Also, when coupled with custom post types and taxonomies, an awesome CMS</li>
+<li>Essentially, your content lives in WordPress</li>
+</ul>
+</section>
+<section>
+<h1 id="introduction">Introduction</h1>
+<ul>
+<li>So how does this content get into WordPress?</li>
+<li>If its a new site, you just enter via wp-admin. Simple?</li>
+<li>If there is existing content, what are your options?</li>
+<li>Importing</li>
+<li>Or using very patient people</li>
+<li>I am going to talk about importing</li>
+</ul>
+</section>
+<section>
+<h1 id="importingintowordpress">Importing into WordPress</h1>
+<ul>
+<li>So what options are there?</li>
+<li>Tools &gt; Import</li>
+<li>talk over, any questions?</li>
+</ul>
+</section>
+<section>
+<h1 id="toolsimport">Tools &gt; Import</h1>
+<ul>
+<li>Limited list of supported formats</li>
+<li>None are all that useful.</li>
+</ul>
+</section>
+<section>
+<h1 id="toolsimport">Tools &gt; Import</h1>
+<ul>
+<li>Blogger</li>
+<li>Blogroll</li>
+<li>Categories and Tags Converter</li>
+<li>LiveJournal</li>
+<li>Movable Type and TypePad</li>
+<li>RSS</li>
+<li>Tumblr</li>
+<li>WordPress</li>
+</ul>
+</section>
+<section>
+<h1 id="toolsimport">Tools &gt; Import</h1>
+<ul>
+<li>Most of this are:</li>
+<li>Blog focused</li>
+<li>Match very specific use cases.</li>
+<li>Livejournal?</li>
+<li>Other than WordPress, has anyone used these?</li>
+</ul>
+</section>
+<section>
+<h1 id="toolsimport">Tools &gt; Import</h1>
+<ul>
+<li>Only really useful importer is WordPress</li>
+<li>Uses WXR</li>
+<li>WordPress eXtended RSS</li>
+<li>aka XML</li>
+<li>Not much in the way of documentation</li>
+<li>WordPress exports it, that&#8217;s about it.</li>
+<li>Learn more about importing content via tools here: <a href="http://codex.wordpress.org/Importing_Content">http://codex.wordpress.org/Importing_Content</a></li>
+</ul>
+</section>
+<section>
+<h1 id="someandwordpress.">So, me and WordPress.</h1>
+<ul>
+<li>Work as a developer at an agency</li>
+<li>Very rarely use WordPress as a blog tool</li>
+<li>Use it primarily as a CMS</li>
+<li><br/>&rarr; Custom post types</li>
+<li>&rarr; Custom taxonomies</li>
+<li>&rarr; Custom fields (ACF etc)</li>
+<li>&rarr; Custom themes</li>
+<li>&rarr; etc</li>
+<li><br/>How useful is importing in this use case?</li>
+<li>Lets find out.</li>
+</ul>
+</section>
+<section>
+<h1 id="andacasestudy">And a Case Study</h1>
+<ul>
+<li>Last year, Flint were approached by Sneaker Freaker to redevelop their aging website</li>
+<li>Existing website was a bespoke, proprietary CMS</li>
+<li>Their situation matched WordPress incredibly well</li>
+</ul>
+</section>
+<section>
+<h1 id="sneakerfreaker">Sneaker Freaker</h1>
+<ul>
+<li>Old site - Over 10k articles</li>
+<li>Even more media attached to articles</li>
+<li>Associated taxonomies</li>
+<li>Distinct content types</li>
+</ul>
+</section>
+<section>
+<h1 id="sneakerfreaker">Sneaker Freaker</h1>
+<ul>
+<li>Somehow all this content needed to get into WordPress</li>
+<li>Options:</li>
+<li>Leave the old site behind?</li>
+<li>Manually migrate?</li>
+<li>Tools &gt; Import?</li>
+</ul>
+</section>
+<section>
+<h1 id="sowhatdidido">So, what did I do?</h1>
+<ul>
+<li>Have I mentioned the pain, stress and grey hair this caused?</li>
+<li>Thinking I lacked a better option</li>
+<li>(and being stupidly idealistic about WordPress)</li>
+<li>I created a script to convert the content in WXR files.</li>
+<li>About a gigabytes worth.</li>
+</ul>
+</section>
+<section>
+<h1 id="sowhatdidido">So, what did I do?</h1>
+<ul>
+<li>In short:</li>
+<li>Never do this.</li>
+<li>Ever.</li>
+<li>Find a better way</li>
+</ul>
+</section>
+<section>
+<h1 id="seriouslythough">Seriously though</h1>
+<ul>
+<li>Main issue, WXR (like all XML) is complex. Making it yourself is painful</li>
+<li>WXR import process is opaque</li>
+<li>Doing it for anything larger than a few megabytes in the browser is flakey</li>
+<li>Issues include: memory consumption, timeouts when pulling in external media etc</li>
+<li>Doing it via the command line is still a black box, but works eventually</li>
+</ul>
+</section>
+<section>
+<h1 id="screwwxrhowaboutsomethingelse">Screw WXR, how about something else?</h1>
+<ul>
+<li>In this instance, screw WXR.</li>
+<li>What to do instead?</li>
+<li>Insert content directly into the database? No.</li>
+<li>After hours of googling and venturing deep into the codex.</li>
+<li>There are better options&#8230;</li>
+<li>Mainly, core WordPress functions</li>
+</ul>
+</section>
+<section>
+<h1 id="whatmakesawordpresssite">What makes a WordPress site?</h1>
+<ul>
+<li>This is slightly skewed to the cms use case</li>
+<li>Posts</li>
+<li>Post Meta (Custom fields etc)</li>
+<li>Taxonomies</li>
+<li>Media</li>
+<li>When importing, we need to be able to create all these.</li>
+</ul>
+</section>
+<section>
+<h1 id="firstthingsfirst">First things first</h1>
+<ul>
+<li><p>The process I am going to describe requires the WordPress environment</p></li>
+<li><p>Doesn&#8217;t fit into the template loaded model</p></li>
+<li><p>Need to bootstrap WordPress in a separate file</p>
+<pre><code class="language-php">&lt;?php
+// import.php
+require( './wp-load.php' );
+</code></pre></li>
+<li><p>Have people done this before?</p></li>
+</ul>
+</section>
+<section>
+<h1 id="creatingapost">Creating a post</h1>
+<ul>
+<li><p><code>wp_insert_post</code> takes an array and inserts (or updates) a record in the wp_post table</p>
+
+<pre><code class="language-php">// Create post object as an array.
+// generally this would come from an external source.
+$my_post = array(
+  'post_title'    =&gt; 'My post',
+  'post_content'  =&gt; 'This is my post.',
+  'post_status'   =&gt; 'publish',
+  'post_author'   =&gt; 1,
+  'post_category' =&gt; array(8,39)
+);
+
+// Insert the post into the database
+// Will return either the post ID or an instance of WP_Error
+// Make sure you capture the ID or stop on error.
+
+$post_id = wp_insert_post( $my_post, true );
+</code></pre></li>
+<li class="small-ref" style="padding: 0;"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/wp_insert_post">http://codex.wordpress.org/Function_Reference/wp_insert_post</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="updatingapost">Updating a post</h1>
+<ul>
+<li><p><code>wp_insert_post</code> will update the post if ID is set in the array.</p></li>
+<li><p><code>wp_update_post</code> will only update the post.</p>
+
+<pre><code class="language-php">// Update post 37
+$my_post = array(
+    'ID'           =&gt; 37,
+    'post_content' =&gt; 'This is the updated content.'
+);
+
+// Update the post into the database
+wp_update_post( $my_post );
+</code></pre></li>
+<li class="small-ref"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/wp_update_post">http://codex.wordpress.org/Function_Reference/wp_update_post</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="addingpostmeta">Adding Post Meta</h1>
+<ul>
+<li><p>Now you&#8217;ve created a post, you might need to add some meta data to it.</p></li>
+<li><p>There are functions for adding, or updating post meta, as with posts</p>
+<pre><code class="language-php">// Accepts id of post, the meta key, the meta value
+// Final variable relates to whether the meta key is unique
+add_post_meta($post_id, 'length', '100m', true);
+</code></pre></li>
+<li class="small-ref"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/add_post_meta">http://codex.wordpress.org/Function_Reference/add_post_meta</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="updatingpostmeta">Updating Post Meta</h1>
+<ul>
+<li><p>In some instances, you might want to update post meta, if it exists.</p>
+
+<pre><code class="language-php">if ( ! update_post_meta (7, 'fruit', 'banana' ) ) {
+    // post meta for fruit, might end up as
+    // banana, apple, etc
+    add_post_meta( 7, 'fruit', 'banana' );
+}
+</code></pre></li>
+<li class="small-ref"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/update_post_meta">http://codex.wordpress.org/Function_Reference/update_post_meta</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="creatingataxonomyterm">Creating a Taxonomy Term</h1>
+
+<ul>
+<li><p><code>wp_insert_term</code> will create a term for a specified taxonomy.</p></li>
+<li><p>Works for both built in taxonomies and custom taxonomies.</p>
+
+<pre><code class="language-php">wp_insert_term(
+    'Apple', // the term
+    'product', // the taxonomy
+    array(
+        'description'=&gt; 'A yummy apple.',
+        'slug' =&gt; 'apple',
+        'parent'=&gt; $parent_term_id
+    )
+);
+
+// Returns an array of ids (term and term taxonomy)
+// Or error. Capture, as appropriate.
+</code></pre></li>
+<li class="small-ref"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/wp_insert_term">http://codex.wordpress.org/Function_Reference/wp_insert_term</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="applyingataxonomytoapost">Applying a Taxonomy to a post</h1>
+
+<ul>
+<li><p><code>wp_set_object_terms</code> allows you to associate a post object with a taxonomy</p></li>
+<li><p>Can be used for either built in taxonomies (tags, categories, formats etc)</p></li>
+<li><p>Can also be used for custom taxonomies</p>
+
+<pre><code class="language-php">// Add our post to categories.
+$cat_ids = array( 6, 8 );
+wp_set_object_terms( $post_id, $cat_ids, 'category' );
+
+// Associate our post to product.
+$product_ids = array( 7, 9);
+wp_set_object_terms( $post_id, $product_ids, 'product' );
+</code></pre></li>
+<li class="small-ref"><p>Ref: <a href="http://codex.wordpress.org/Function_Reference/wp_set_object_terms">http://codex.wordpress.org/Function_Reference/wp_set_object_terms</a></p></li>
+</ul>
+</section>
+<section>
+<h1 id="media">Media</h1>
+<ul>
+<li>Media is always a difficult thing to import.</li>
+<li>You are not going to programmatically upload files?</li>
+<li>Always been a stumbling block due to hosting constraints etc</li>
+<li>Generally media will be images</li>
+<li>WordPress provides a function called <code>media_sideload_image</code></li>
+<li>Will download an image from a specified url and attachs it to a post</li>
+</ul>
+</section>
+<section>
+<h1 id="media-onesolutionforimages">Media - One Solution for Images</h1>
+
+<ul>
+<li><p><code>media_sideload_image</code> allows us to grab an image from a url</p></li>
+<li><p>From the codex</p>
+
+<pre><code class="language-php">// Include relevant files.
+require_once(ABSPATH . 'wp-admin/includes/media.php');
+require_once(ABSPATH . 'wp-admin/includes/file.php');
+require_once(ABSPATH . 'wp-admin/includes/image.php');
+
+$url = &quot;http://s.wordpress.org/style/images/wp3-logo.png&quot;;
+$post_id = 1;
+$desc = &quot;The WordPress Logo&quot;;
+
+$image = media_sideload_image($url, $post_id, $desc);
+</code></pre></li>
+<li class="small-ref">Ref: <a href="http://codex.wordpress.org/Function_Reference/media_sideload_image">http://codex.wordpress.org/Function_Reference/media_sideload_image</a></li>
+</ul>
+</section>
+<section>
+<h1 id="conclusion">Conclusion</h1>
+
+<ul>
+<li>Hopefully this gives you some ideas on how to handle situations that require you to import content</li>
+<li>Slides will be online tomorrow.</li>
+<li>Follow me on twitter: <a href="http://twitter.com/navitronic">@navitronic</a></li>
+<li>Or watch the meetup group page</li>
+<li>Questions?</li>
+<li><br><br>Thank you</li>
+</ul>
+</section>
 </article>
 <script type="text/javascript" src="js/prism.js"></script>
 <script type="text/javascript" src="js/bespoke.min.js"></script>
 <script type="text/javascript" src="js/bespoke-scale.min.js"></script>
 <script type="text/javascript" src="js/bespoke-bullets.min.js"></script>
 <script type="text/javascript" src="js/bespoke-hash.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

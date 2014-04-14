@@ -40,15 +40,16 @@ article.bespoke-parent {
 }
 
 .bespoke-slide {
-	width: 960px;
-	height: 540px;
+	width: 800px;
+	height: 600px;
 	position: absolute;
 	top: 50%;
-	margin-top: -270px;
+	margin-top: -300px;
 	left: 50%;
-	margin-left: -480px;
-	background: #eaeaea;
-	padding: 40px 80px;
+	margin-left: -400px;
+	background: #fff;
+	padding: 20px 80px;
+	padding: 20px 40px;
 	-webkit-border-radius: 0;
 	border-radius: 0;
 }
@@ -56,7 +57,7 @@ article.bespoke-parent {
 @media print {
 	.bespoke-slide {
 		zoom: 1 !important;
-		height: 743px;
+		height: 600px;
 		width: 100%;
 		page-break-before: always;
 		position: static;
@@ -153,29 +154,30 @@ li.bespoke-bullet-inactive {
 	}
 }
 
-code {
+pre code {
 	display: block;
-	padding: 26px !important;
+	padding: 8px 15px !important;
 	font-family: 'Source Code Pro', sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 24px;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	color: #404040;
+	background: black;
 }
 
 h1 {
-	font-size: 72px;
-	line-height: 82px;
-	letter-spacing: -2px;
-	margin-bottom: 8px;
-	font-weight: 900;
-	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 60px;
+	margin-bottom: 40px;
+	font-weight: 700;
+	border-bottom: 5px solid #666;
 }
 h2 {
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: -1px;
 	margin-bottom: 40px;
@@ -235,4 +237,12 @@ table,tr,td {
 .aside {
 	color: #aaa;
 	font-style: italic;
+}
+.small-ref {
+	padding-top: 20px;
+	font-size: 14px !important;
+}
+
+ul ul {
+	margin-left: 20px;
 }
